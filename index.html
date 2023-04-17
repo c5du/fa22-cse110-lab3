@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>    
+    <title>CSE110 Meeting Minutes</title>
+    <link rel="icon" href="/screenshots/favicon.ico">
+    <meta name="desciption" content="Meeting minutes for CSE110">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <h1>Lab Week 2 Meeting Summary</h1> <img src="/screenshots/favicon.ico" 
+      alt="CSE110">
+      <h3>April 16th, 2023</h3>
+      <h3>Attendence: </h3>
+        <ol>
+          <li>Catherine Du</li>
+          <li>Member 1</li>
+          <li>Member 2</li>
+        </ol>
+    </header>
+
+    <nav>
+      <span><h2>Important Links</h2></span>
+      <strong>Please look at these links before asking questions!</strong>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Elements Reference</a></li>
+        <li><a href="https://html.spec.whatwg.org/multipage/">HTML Info</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <div>
+        <section>
+          <h2>Recap of Last Meeting</h2>
+          <p>We started making a Github page using Command Line. 
+            Then we used VSCode, <i>also known as Visual Studio Code</i>.
+            Then we learned about how to use .gitignore to create a private file.<br>
+            Lastly, we used Markdown in order to utilize <em>many</em> different constructs to format the User Page.
+          </p>
+        </section>
+      </div>
+
+      <div>
+        <section>
+          <h2>Agenda for Lab Week 2 Meeting</h2>
+          <p>In this meeting we went over <b>HTML</b>.
+          We also explored browser developer tools to get more used to using them.</p>
+          <hr>
+          <h3>HTML</h3>
+          <p>The information came from the canvas site that looks like this:
+            <img src="/screenshots/labInfo.png" alt="lab info">
+            We learned how to use various different HTML elements. The different types include:
+            <ul>
+              <li>Document metadata</li>
+              <li>Content sectioning</li>
+              <li>Text content</li>
+              <li>Inline text semantics</li>
+              <li>Images and multimedia</li>
+              <li>Interactive Elements</li>
+              <li>Forms</li>
+            </ul>
+            Here is a quick video and audio that gives a <i>super</i> short summary:
+            <video controls>
+              <source src="/video/video.mp4" type="video/mp4" />
+              <a href="/video/video.mp4">MP4</a>
+            </video>
+            <audio controls>
+              <source src="/video/audio.ogg" type="audio/ogg" />
+              <a href="/video/audio.ogg">OGG</a>
+            </audio>
+          </p>
+          <h3>Browser Developer Tools</h3>
+          <p>There was a fun activity to explore the tools by going through a scavenger hunt.</p>
+        </section>
+      </div>
+
+      <details>
+        <summary>Some comments, concerns, and questions</summary>
+        Please give us any feedback on things you are confused on
+      </details>  
+  </main>
+
+  <footer>Documented by: Catherine Du</footer>
+
+  <h2>Nonfunctional Form</h2>
+  <form>
+    <fieldset>
+      <legend>Do you like this form?</legend>
+      <label><input type="radio" name="radio" value="yes" /> Yes</label>
+      <label><input type="radio" name="radio" value="no" /> No</label>
+    </fieldset><br>
+
+    <label for="boxes">Want to hear about boxes?</label>
+    <textarea id="box" name="boxes" rows="3" cols="30">
+      There once was a box in boxes that wanted food.
+    </textarea><br>
+
+    <label for="favorite-language">Favorite Language?</label> 
+    <input list="favorite-languages" id="favorite-language" name="favorite-language">
+    <datalist id="favorite-languages">
+      <option value="HTML">
+      <option value="CSS">
+    </datalist><br>
+
+    <label for="tired">Tired?</label>
+    <select name="sleep" id="tired">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select><br>
+
+    <label>Tired?</label>
+    <input type="checkbox"><br>
+
+    <label>Why or why not?</label>
+    <input type="text"><br>
+
+    <label>Date:</label>
+    <input type="date"><br>
+    
+    <button>Save</button>
+  </form>
+
+  </body>
+</html>
