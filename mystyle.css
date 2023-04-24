@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "castorotitling";
+    src: url("fonts/castorotitling.woff2") format("woff2"), 
+        url("fonts/castorotitling.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}   
+body{
+    background-color: rgb(235, 255, 252);
+}
+/*for headers*/
+h1{
+    font-family: "castorotitling";
+    color: #00433b;
+    background-color: #90e4da;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 1pc;
+    margin-bottom: 1cm;
+}
+h3{
+    color: hsl(173, 100%, 33%);
+    margin-left: 10vw;
+}
+
+/*lists*/
+ul{
+    border: 1px solid darkgreen;
+    width: 50vw;
+    padding: 10vw;
+    margin: 10vw;
+}
+ol{
+    border-top-width: 1px;
+    border-top-color: darkgreen;
+    border-top-style: dashed;
+    margin-left: 10vw;
+}
+li{
+    max-width: 90%;
+    min-width: 50%;
+    height: 15px;
+}
+
+/*text*/
+p{
+    margin-left: 10vw;
+    position: relative;
+}
+
+strong{
+    display: block;
+    background-color: rgb(248, 255, 207);
+    position: absolute;
+}
+
+nav{
+    display: inline-block;
+    padding: 5vw;
+}
+@media (hover:hover){
+    button:hover{
+        background-color:darkgreen; 
+    }
+}
+button:active{
+   background-color:blue; 
+}
+
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.one{
+    grid-area: first;
+}
+.two{
+    grid-area: second;
+}
+.three{
+    grid-area: third;
+}
+.four{
+    grid-area: fourth;
+}
+.five{
+    grid-area: fifth;
+}
+.six{
+    grid-area: sixth;
+}
+.seven{
+    grid-area: seventh;
+}
+.container-2{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: repeat(3, 30px);
+    grid-template-areas: 
+        "first second third"
+        "fourth fifth ."
+        "sixth seventh .";
+}
