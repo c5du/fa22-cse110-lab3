@@ -4,10 +4,12 @@
         url("fonts/castorotitling.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-}   
+}  
+
 body{
     background-color: rgb(235, 255, 252);
 }
+
 /*for headers*/
 h1{
     font-family: "castorotitling";
@@ -22,7 +24,6 @@ h3{
     color: hsl(173, 100%, 33%);
     margin-left: 10vw;
 }
-
 /*lists*/
 ul{
     border: 1px solid darkgreen;
@@ -42,6 +43,7 @@ li{
     min-width: 10%;
     height: auto;
 }
+
 
 /*text*/
 p{
@@ -96,7 +98,7 @@ button:active{
 .seven{
     grid-area: seventh;
 }
-.container-2{
+*#container-2{
     margin-left: 10vw;
     display: grid;
     grid-template-columns: 100px 100px 100px;
@@ -105,4 +107,25 @@ button:active{
         "first second third"
         "fourth fifth ."
         "sixth seventh .";
+}
+a[target="changeColor"]{
+    background-color: yellow;
+}
+a[href*="http"]{
+    background-color: rgb(38, 175, 220);
+} 
+div p{
+    color:#00433b;
+}
+div > p {
+    background-color: #90e4da;
+}
+div + p{
+    color:aliceblue;
+}
+div ~ p{
+    background-color: antiquewhite;
+}
+div.one{
+    color:aquamarine;
 }
