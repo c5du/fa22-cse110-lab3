@@ -5,13 +5,26 @@
     <link rel="icon" href="screenshots/favicon.ico">
     <meta name="desciption" content="Meeting minutes for CSE110">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
   </head>
+
+  <!--Internal CSS-->
+  <style>
+  h2{
+    color: #00433b;
+    margin-top: 3vh;
+    margin-bottom: 1rem;
+    margin-left: 5vw;
+  }
+  </style>
   <body>
     <header>
+      <p style="display: none;">hidden</p>
       <h1>Lab Week 2 Meeting Summary</h1> <img src="screenshots/favicon.ico" 
       alt="CSE110">
       <h3>April 16th, 2023</h3>
-      <h3>Attendence: </h3>
+      <!--Inline CSS-->
+      <h3 style="color:darkgreen;">Attendence: </h3>
         <ol>
           <li>Catherine Du</li>
           <li>Member 1</li>
@@ -44,12 +57,12 @@
       <div>
         <section>
           <h2>Agenda for Lab Week 2 Meeting</h2>
-          <p>In this meeting we went over <b>HTML</b>.
+          <p style="display: inline;">In this meeting we went over <b>HTML</b>.
           We also explored browser developer tools to get more used to using them.</p>
           <hr>
           <h3>HTML</h3>
           <p>The information came from the canvas site that looks like this:</p>
-            <img src="screenshots/labInfo.png" alt="lab info">
+            <img src="screenshots/labInfo.png" alt="lab info" style="margin-left: 10vw;">
           <p>We learned how to use various different HTML elements. The different types include:</p>
             <ul>
               <li>Document metadata</li>
@@ -61,11 +74,11 @@
               <li>Forms</li>
             </ul>
           <p>Here is a quick video and audio that gives a <i>super</i> short summary:</p>
-            <video controls>
+            <video controls style="margin-left: 10vw;">
               <source src="video/video.mp4" type="video/mp4" />
               <a href="video/video.mp4">MP4</a>
             </video>
-            <audio controls>
+            <audio controls style="margin-left: 10vw;">
               <source src="video/audio.ogg" type="audio/ogg" />
               <a href="video/audio.ogg">OGG</a>
             </audio>
@@ -78,9 +91,25 @@
         <summary>Some comments, concerns, and questions</summary>
         Please give us any feedback on things you are confused on
       </details>  
+
+      <div class="container">
+        <div>below</div>
+        <div>name</div>
+        <div>Contact</div>
+      </div>
+
+      <div class="container-2">
+        <div class="one">for</div>
+        <div class="two">more</div>
+        <div class="three">information</div>
+        <div class="four">with</div>
+        <div class="five">messenger</div>
+        <div class="six">or</div>
+        <div class="seven">slack</div>
+      </div>
   </main>
 
-  <footer>Documented by: Catherine Du</footer>
+  <footer">Documented by: Catherine Du</footer>
 
   <h2>Nonfunctional Form</h2>
   <form>
@@ -116,7 +145,6 @@
 
     <label>Date:</label>
     <input type="date"><br>
-
     <button>Save</button>
   </form>
 
