@@ -98,7 +98,7 @@ button:active{
 .seven{
     grid-area: seventh;
 }
-*#container-2{
+#container-2{
     margin-left: 10vw;
     display: grid;
     grid-template-columns: 100px 100px 100px;
@@ -128,4 +128,8 @@ div ~ p{
 }
 div.one{
     color:aquamarine;
+}
+
+*.red{
+    color: red;
 }
